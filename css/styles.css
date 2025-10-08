@@ -1,0 +1,72 @@
+/* site_arantzaMuñoz */
+:root {
+  /* Mode 1 */
+  /* color */
+  --bg-color: #ffffff;
+  --card-bg: #f3f3f3;
+  --text-color: #2b1616;
+}
+
+body.dark {
+  --bg-color: #000;
+  --card-bg: #424242ff;
+  --text-color: #ffffffff;
+}
+
+body {
+    /* este atributo es para pintar el fondo*/
+    font-family: Arial;
+    background-color: var(--bg-color);
+    color: var(--text-color)
+}
+
+.contenedor {
+    width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 20%;
+    margin: 2%;
+    float: left;
+    height: 300px;
+    background-color: var(--card-bg)
+}
+h1 {
+    font-family: "Amaranth", sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+body{
+    background-color: rgb(255, 208, 176);
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.card {
+    width:100%;
+    margin: 20px 0 50px 0 ;
+}
+}
+#toggle-theme {
+font-size: 16px;
+font-weight: 800;
+border-radius: 8px;
+cursor: pointer;
+padding:12px 24px;
+border: none;
+background-color: #f79d65;
+color: #fff;
+display:block;
+transition: background-color 0.5, transform 0.5;
+}
+
+#toggle-theme:hover{
+    background-color:#f27059;
+    transform: scale(1.05);
+}
